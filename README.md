@@ -11,11 +11,11 @@ Para esta actividad usted tendrá que diseñar e implementar el patrón de softw
 
 * [x] Teoría del patrón de software (corresponde toda la teoría relacionada con dicho patrón).
 * [x] Diagrama de clases que describa el patrón de software.
-* [ ] Descripción detallada del caso de estudio aplicado.
-* [ ] Diagrama de clase del caso de estudio.
+* [x] Descripción detallada del caso de estudio aplicado.
+* [x] Diagrama de clase del caso de estudio.
 * [x] Máximo de páginas 4 con las referencias en formato PDF.
 
-# Solved
+# Solución
 
 # Parcial Facade
 
@@ -76,9 +76,9 @@ Esta clase es para implementar la interfaz que será utilizada por la clase clie
 Múltiples clases de sistema pueden estar ahí en el sistema y cada clase de sistema es para un propósito específico.
 
 **Clase de cliente** 
-La clase de cliente utiliza la clase de fachada para acceder a la funcionalidad del sistema. Podría ser difícil acceder a la clase de sistema directamente, así que el cliente está usando la clase de fachada en su lugar.
+La clase de cliente utiliza la clase de fachada para acceder a la funcionalidad del sistema. Podría ser difícil acceder a la clase de sistema directamente, así que el cliente está usando la clase de fachada en su lugar. Hace peticiones a la Fachada para que se haga el trabajo de los subsistemas
 
-# ⛯Diagrama de clases (generico)
+# ⛯Diagrama de clases (Genérico)
 
 ![Parcial%20Facade%207fe85927f05243cea68792a00adb7831/Untitled%201.png](Parcial%20Facade%207fe85927f05243cea68792a00adb7831/Untitled%201.png)
 
@@ -87,6 +87,7 @@ Foto tomada de [https://upload.wikimedia.org/wikipedia/en/5/57/Example_of_Facade
 ## 👍 Pros
 
 - Puedes aislar tu código de la complejidad de un subsistema.
+- Facilita el uso y el mantenimiento de un proceso estructural mayor.
 
 # 👎 Contras
 
@@ -103,6 +104,19 @@ Foto tomada de [https://upload.wikimedia.org/wikipedia/en/5/57/Example_of_Facade
 
 # 📚 Caso Estudio
 
+Un restaurante requiere un programa para preparar comidas rápidas, diseñe un sistema de información para indicar el numero de platos servidos en una jornada laboral.
+
+![Parcial%20Facade%207fe85927f05243cea68792a00adb7831/diagrama_de_clases.jpg](Parcial%20Facade%207fe85927f05243cea68792a00adb7831/diagrama_de_clases.jpg)
+
+## Requerimientos Funcionales
+
+- Permitir al usuario cerrar la jornada laboral
+- Imprimir en pantalla el proceso
+
+## Requerimientos no Funcionales
+
+- Debe tomar al menos 1 segundos terminar una salchipapa
+
 # Referencias
 
 [Facade](https://refactoring.guru/design-patterns/facade)
@@ -115,4 +129,6 @@ Foto tomada de [https://upload.wikimedia.org/wikipedia/en/5/57/Example_of_Facade
 
 [Design Patterns in Python - Facade](https://medium.com/@hnmpatel/design-patterns-in-python-facade-65b8a393ff68)
 
-# Este documento fue realizado en Notion
+### Este documento fue realizado en Notion
+
+...
